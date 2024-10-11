@@ -1,4 +1,4 @@
-using MediatR;
+﻿using MediatR;
 using MongoDB.Entities;
 using USP.Application.Common.Dto;
 using USP.Application.Common.Mappers;
@@ -13,9 +13,9 @@ public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,
     {
         var userEntity = new Domain.Entities.User
         {
-            Email = "pbisevac@singidunuma.ac.rs",
-            FirstName = "Petar",
-            LastName = "Bisevac",
+            Email = "dusan.mihajlovic@singidunum.ac.rs",
+            FirstName = "Dušan",
+            LastName = "Mihajlović",
         };
 
         var userEntity2 = new Domain.Entities.User
