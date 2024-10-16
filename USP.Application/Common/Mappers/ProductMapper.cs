@@ -37,7 +37,17 @@ public static partial class ProductMapper
 
         return entity;
     }
+    public static Product ToEntityFromEditDto(this EditProductDto dto)
+    {
+        var entity = new Product
+        {
+            Name = dto.Name,
+            Description = dto.Description,
+            Price = dto.Price,
+        };
 
+        return entity;
+    }
     public static async Task<ProductEmbedded> ToEmbedded(this Product entity)
     {
         return new ProductEmbedded
