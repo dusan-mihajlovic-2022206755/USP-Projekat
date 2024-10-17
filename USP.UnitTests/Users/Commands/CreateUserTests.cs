@@ -16,9 +16,9 @@ public class CreateUserTests : Base
     {
         //Given (Arrange) - what is part of request
         var dto = new EditUserDtoBuilder()
-            .WithFirstName("Petar")
-            .WithLastName("Bisevac")
-            .WithEmail("pbisevac@singidunum.ac.rs")
+            .WithFirstName("Dušan")
+            .WithLastName("Mihajlović")
+            .WithEmail("dusan.mihajlovic.22@singidunum.ac.rs")
             .Build();
 
         var command = new EditUserCommandBuilder()
