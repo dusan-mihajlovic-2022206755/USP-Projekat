@@ -9,16 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d98a384-119b-424c-9b11-b94400a9d094" name="Changes" comment="dodati fajlovi oko testova, sa malim izmenama">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/be-build-and-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.USP/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.USP/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.USP/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.USP/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USP.Application/Common/Mappers/ProductMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/USP.Application/Common/Mappers/ProductMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USP.BaseTests/Builders/Dto/EditProductDtoBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/USP.BaseTests/Builders/Dto/EditProductDtoBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USP.UnitTests/Products/Commands/CreateProductTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/USP.UnitTests/Products/Commands/CreateProductTests.cs" afterDir="false" />
+    <list default="true" id="4d98a384-119b-424c-9b11-b94400a9d094" name="Changes" comment="testiranje workflowa">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.USP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.USP/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +23,33 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="pomocna-modifikovani-kod-sa-vezbi" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dusan-mihajlovic-2022206755&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dusan-mihajlovic-2022206755/USP-Projekat.git&quot;,
+    &quot;accountId&quot;: &quot;5bb487ed-c347-4056-8152-a1da3765287c&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d7dbe7c4cc75f01532fb6ce687bce710e21c95e6c44fd11dbe73c87d22758/WebApplicationFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BaseTests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/BaseTests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/dusan/OneDrive/Desktop/USP Projekat/USP.API/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/dusan/OneDrive/Desktop/USP Projekat/USP.API/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dusan/OneDrive/Desktop/USP Projekat/USP.Application/Users/Commands/EditUserCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/USP.UnitTests/Products/Commands/CreateProductTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/USP.UnitTests/Users/Commands/CreateUserTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dusan/OneDrive/Desktop/USP Projekat/USP.UnitTests/Users/Commands/CreateUserTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -61,7 +67,7 @@
     ".NET Launch Settings Profile.USP.API: https.executor": "Run",
     "1dbde4a9-4b2e-4fde-8263-a2b5a1a48129.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pomocna-modifikovani-kod-sa-vezbi",
+    "git-widget-placeholder": "feature-testiranje-workflowa",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -133,7 +139,8 @@
       <workItem from="1729073062900" duration="112000" />
       <workItem from="1729073186846" duration="1050000" />
       <workItem from="1729121587174" duration="85000" />
-      <workItem from="1729121708699" duration="2137000" />
+      <workItem from="1729121708699" duration="3175000" />
+      <workItem from="1729186710723" duration="4021000" />
     </task>
     <task id="LOCAL-00001" summary="Praćene vežbe, deo sa unit testovima">
       <option name="closed" value="true" />
@@ -159,7 +166,31 @@
       <option name="project" value="LOCAL" />
       <updated>1729122043903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="menjani testovi">
+      <option name="closed" value="true" />
+      <created>1729124324912</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729124324912</updated>
+    </task>
+    <task id="LOCAL-00005" summary="promenjeno 'main' da bude 'master' u tekstu">
+      <option name="closed" value="true" />
+      <created>1729124820255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729124820255</updated>
+    </task>
+    <task id="LOCAL-00006" summary="testiranje workflowa">
+      <option name="closed" value="true" />
+      <created>1729191724197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729191724197</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,12 +198,58 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Praćene vežbe, deo sa unit testovima" />
     <MESSAGE value="dodato i izmenjeno više stvari oko product-a" />
     <MESSAGE value="dodati fajlovi oko testova, sa malim izmenama" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodati fajlovi oko testova, sa malim izmenama" />
+    <MESSAGE value="menjani testovi" />
+    <MESSAGE value="promenjeno 'main' da bude 'master' u tekstu" />
+    <MESSAGE value="testiranje workflowa" />
+    <option name="LAST_COMMIT_MESSAGE" value="testiranje workflowa" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/USP.Application/Users/Commands/EditUserCommand.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\dusan\OneDrive\Desktop\USP Projekat\USP.Application\Users\Commands\EditUserCommand.cs" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="573" />
+            </startOffsets>
+            <endOffsets>
+              <option value="574" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/USP.UnitTests/Users/Commands/CreateUserTests.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\dusan\OneDrive\Desktop\USP Projekat\USP.UnitTests\Users\Commands\CreateUserTests.cs" containingFunctionPresentation="Method 'CreateUserCommand_User_UserCreated'">
+            <startOffsets>
+              <option value="1054" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1089" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
