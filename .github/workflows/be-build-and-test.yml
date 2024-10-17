@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - "feature/*" # matches every feature branch containing a single '/'
-      - "main" # matches main branch '/'
+      - "master" # matches main branch '/'
       - "!release/**" # excludes release
 
 jobs:
