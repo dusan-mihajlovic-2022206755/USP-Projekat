@@ -37,18 +37,27 @@ public static partial class ProductMapper
 
         return entity;
     }
+    public static Product ToEntityFromEditDto(this EditProductDto dto)
+    {
+        var entity = new Product
+        {
+            Name = dto.Name,
+            Description = dto.Description,
+            Price = dto.Price,
+        };
 
+        return entity;
+    }
     public static async Task<ProductEmbedded> ToEmbedded(this Product entity)
     {
-        return new ProductEmbedded
-        {
-            Name = entity.Name,
-            Description = entity.Description,
-            Price = entity.Price,
-            User = entity.User,
-            ReferencedOneToOneUser = await entity.ReferencedOneToOneUser.ToEntityAsync(),
-            ReferencedOneToManyUser = entity.ReferencedOneToManyUser.ToListEntity(),
-            ReferencedManyToManyUser = entity.ReferencedManyToManyUser.ToListEntity()
-        };
+        var embedded = new ProductEmbedded();
+        embedded.Name = entity.Name;
+        embedded.Description = entity.Description;
+        embedded.Price = entity.Price;
+        embedded.User = entity.User;
+        embedded.ReferencedOneToOneUser = await entity.ReferencedOneToOneUser.ToEntityAsync();
+        embedded.ReferencedOneToManyUser = entity.ReferencedOneToManyUser.ToListEntity();
+        embedded.ReferencedManyToManyUser = entity.ReferencedManyToManyUser.ToListEntity();
+        return embedded;
     }
 }

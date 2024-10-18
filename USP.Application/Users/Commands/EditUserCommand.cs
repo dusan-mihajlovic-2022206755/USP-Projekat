@@ -11,7 +11,15 @@ public class EditUserCommandHandler : IRequestHandler<EditUserCommand>
 {
     public async Task Handle(EditUserCommand request, CancellationToken cancellationToken)
     {
-        var entity = request.User.ToEntity();
-        await entity.SaveAsync(cancellation: cancellationToken);
+        try
+        {
+            var entity = request.User.ToEntity();
+            await entity.SaveAsync(cancellation: cancellationToken);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
     }
 }

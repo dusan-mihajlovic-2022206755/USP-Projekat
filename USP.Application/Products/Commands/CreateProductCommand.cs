@@ -1,4 +1,4 @@
-﻿using MediatR;
+using MediatR;
 using MongoDB.Entities;
 using USP.Application.Common.Dto;
 using USP.Application.Common.Mappers;
@@ -13,16 +13,16 @@ public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,
     {
         var userEntity = new Domain.Entities.User
         {
-            Email = "dusan.mihajlovic@singidunum.ac.rs",
-            FirstName = "Dušan",
-            LastName = "Mihajlović",
+            Email = "pbisevac@singidunuma.ac.rs",
+            FirstName = "Petar",
+            LastName = "Bisevac",
         };
 
         var userEntity2 = new Domain.Entities.User
         {
-            Email = "pbisevac2@singidunuma.ac.rs",
-            FirstName = "Petar2",
-            LastName = "Bisevac2",
+            Email = "dusan.mihajlovic.22@singidunum.ac.rs",
+            FirstName = "Dusan",
+            LastName = "Mihajlovic",
         };
 
         await userEntity.SaveAsync(cancellation: cancellationToken);
